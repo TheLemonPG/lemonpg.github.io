@@ -1,0 +1,10 @@
+.mynavbar {
+  opacity: 0.5 !important;
+  background-color: #ffffff;
+  /* background-color: #af9a7d; */
+}
+.mynavbar .navbar-nav a {
+  font-size: 17px;
+  color: #000 !important;
+  font-weight: bold;
+}

@@ -1,0 +1,69 @@
+.btn {
+  position: relative;
+  color: white;
+  background-color: #af9a7d;
+  border-color: #af9a7d;
+  cursor: pointer;
+  /* width: 120px; */
+  /* height: 60px; */
+  /* line-height: 64px;
+  transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+/* .btn {
+  transform: scale(1, 1);
+  font-size: 13px;
+} */
+@media screen and (max-width: 992px) {
+  .btn {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .btn {
+    font-size: 15px;
+  }
+}
+.btn::before,
+.btn::after {
+  content: "";
+  position: absolute;
+  transition: all 0.3s;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+/* BTN FIVE */
+.btn::before {
+  transition: transform 0.15s, 0.15s border-radius 0.15s;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.3);
+  transform: scale(0.1, 0.1);
+  border-radius: 50%;
+}
+
+.btn:hover::before {
+  opacity: 1;
+  transform: scale(1, 1);
+  border-radius: 0;
+}
+
+.btn::after {
+  transition: all 0.3s;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover::after {
+  opacity: 0;
+  border-color: black;
+}
+.btn:hover {
+  background-color: #af9a7d;
+  border-color: #af9a7d;
+  color: black;
+}

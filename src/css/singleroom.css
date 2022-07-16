@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+.SR-imgs {
+  margin: 70px 0;
+}
+
+.SR-imgs img {
+  width: 100%;
+  transition: all 0.3s;
+}
+.SR-imgs img:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.details h4 {
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.details {
+  margin-bottom: 40px;
+}
+.extras {
+  margin-bottom: 40px;
+}
+.extras h5 {
+  font-weight: bold;
+}

@@ -1,0 +1,15 @@
+.cardItem {
+  background-color: #e1e1e1;
+  transition: all 0.5s;
+  cursor: pointer;
+  /* border-color: #e1e1e1; */
+}
+.cardItem .card-title {
+  font-weight: bold;
+  margin: 15px 0;
+}
+.cardItem:hover {
+  transform: scale(1.1);
+  background-color: #af9a7d;
+  opacity: 0.9;
+}

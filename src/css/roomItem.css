@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+}
+.roomcard {
+  padding: 0px;
+  border-color: white;
+}
+
+/* @media screen and (min-width: 768px) {
+  .roomcard {
+    max-width: 47% !important;
+    margin: 10px;
+  }
+} */
+
+.roomcard .card-title {
+  background-color: #af9a7d !important;
+  margin: 0px !important;
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: 10px 0;
+}
+.roomcard .card-body {
+  padding: 0px 0px;
+  margin: 0px 0px;
+  transition: all 0.5s;
+  position: relative !important;
+  /* width: 90%;
+  height: 90%; */
+}
+.roomcard img {
+  background-size: cover;
+  width: 100%;
+
+  /* height: 80%; */
+}
+
+.roomcard .pricebox {
+  background-color: black;
+  border-bottom-right-radius: 18px;
+  width: 60px;
+  height: 48px;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+.roomcard p {
+  color: white;
+  letter-spacing: 3px;
+  line-height: 13px;
+  margin-top: 7px;
+  font-size: 15px;
+}
+.roomcard .PN {
+  letter-spacing: 0px;
+  font-size: 10px;
+}
+.roomcard .middle {
+  opacity: 0;
+  position: absolute;
+  /* top: 100%;
+  left: 100%; */
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 992px) {
+  .roomcard {
+    max-width: 23% !important;
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .roomcard {
+    max-width: 20% !important;
+  }
+
+  .roomcard {
+    max-width: 45% !important;
+    margin: 10px;
+  }
+
+  .roomcard .pricebox {
+    border-bottom-right-radius: 15px;
+    width: 55px;
+    height: 40px;
+  }
+  .roomcard p {
+    font-size: 12px;
+    margin: 0px;
+    letter-spacing: 1px;
+    line-height: 13px;
+    margin-top: 7px;
+  }
+  .roomcard .PN {
+    letter-spacing: 0px;
+    font-size: 9px;
+  }
+  /* .roomcard .middle {
+    opacity: 0.7;
+    position: absolute;
+    /* top: 35%;
+    left: 38%; */
+  /* } */
+}
+
+@media only screen and (max-width: 768px) {
+  .roomcard {
+    max-width: 85% !important;
+  }
+  .roomcard .pricebox {
+    border-bottom-right-radius: 15px;
+    width: 65px;
+    height: 50px;
+  }
+  .roomcard p {
+    font-size: 15px;
+    margin: 0px;
+    letter-spacing: 1px;
+  }
+  .roomcard .PN {
+    letter-spacing: 0px;
+    font-size: 9px;
+  }
+  /* .roomcard .middle {
+    opacity: 1;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+  } */
+  /* .roomcard .middle {
+    opacity: 0.3;
+    position: absolute;
+    /* top: 35%;
+    left: 28%; */
+  /* }  */
+}
+
+/* .roomcard .card-body:hover {
+  transform: scale(1.05);
+} */
+/* .roomcard .card-body:hover img {
+  opacity: 0.4 !important;
+} */
+
+.roomcard .card-title {
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.roomcard::before,
+.roomcard::after {
+  content: "";
+  position: absolute;
+  transition: all 0.3s;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+/* BTN FIVE */
+.roomcard::before {
+  transition: transform 0.15s, 0.15s border-radius 0.15s;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.3);
+  transform: scale(0.1, 0.1);
+  border-radius: 50%;
+}
+
+.roomcard:hover::before {
+  opacity: 1;
+  transform: scale(1, 1);
+  border-radius: 0;
+}
+
+.roomcard::after {
+  transition: all 0.3s;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.roomcard:hover::after {
+  opacity: 0;
+  border-color: black;
+}
+
+.roomcard:hover .middle {
+  opacity: 1;
+}
+.roomcard:hover {
+  transform: scale(1.05);
+}
